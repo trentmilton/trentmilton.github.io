@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<!-- Primary Meta Tags -->
+		<title>Trent Milton</title>
+		<meta
+			name="title"
+			content="Trent Milton"
+		/>
+		<meta
+			name="description"
+			content="Software Dev."
+		/>
+
+		<!-- Open Graph / Facebook -->
+		<meta
+			property="og:type"
+			content="website"
+		/>
+		<meta
+			property="og:url"
+			content="https://trentmilton.com/"
+		/>
+		<meta
+			property="og:title"
+			content="Trent Milton"
+		/>
+		<meta
+			property="og:description"
+			content="Software Dev."
+		/>
+
+		<!-- Twitter -->
+		<meta
+			name="twitter:card"
+			content="summary_large_image"
+		/>
+		<meta
+			name="twitter:url"
+			content="https://trentmilton.com/"
+		/>
+		<meta
+			name="twitter:title"
+			content="Software Dev."
+		/>
+		<meta
+			name="twitter:description"
+			content="Software Dev."
+		/>
+
+		<!-- Other -->
+		<link
+			rel="icon"
+			href="/favicon.ico"
+		/>
+		<link
+			rel="shortcut"
+			href="/favicon-square.ico"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/images/favicon-16x16.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/images/favicon-32x32.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			href="/images/apple-touch-icon.png"
+		/>
+		<link
+			rel="manifest"
+			href="site.webmanifest"
+		/>
+		<meta
+			name="theme-color"
+			content="#ffffff"
+		/>
+		<link
+			rel="preload"
+			as="image"
+			href="/images/avatar-300.webp"
+			imagesrcset="/images/avatar-300.webp 1x, /images/avatar-600.webp 2x"
+			fetchpriority="high"
+		/>
+		<link
+			rel="preload"
+			as="font"
+			type="font/woff2"
+			crossorigin
+			href="/fonts/poppins-v23-latin-700.woff2"
+		/>
+		<link
+			rel="stylesheet"
+			href="/styles/fonts.css"
+			media="print"
+			onload="this.media = 'all'"
+		/>
+		<noscript
+			><link
+				rel="stylesheet"
+				href="/styles/fonts.css"
+		/></noscript>
+		<style>
+			/* https://gwfh.mranftl.com/fonts/poppins?subsets=latin */
+			@font-face {
+				font-family: 'Poppins';
+				font-style: normal;
+				font-weight: 700;
+				font-display: swap;
+				src: url('/fonts/poppins-v23-latin-700.woff2') format('woff2');
+			}
+			/* Make the viewport centring robust on mobile */
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 0;
+				/* svh/dvh handle iOS/Android browser UI correctly */
+				min-height: 100svh; /* supported on modern mobile */
+				min-height: 100dvh; /* fallback on other modern browsers */
+				display: grid;
+				place-items: center; /* perfect centre */
+				background-color: #81c7aa;
+				font-family:
+					'Poppins',
+					system-ui,
+					-apple-system,
+					Segoe UI,
+					Roboto,
+					Helvetica,
+					Arial,
+					sans-serif;
+			}
+
+			.container {
+				text-align: center;
+			}
+
+			/* True circle, no padding distortion */
+			.circle {
+				margin: auto;
+				width: 300px;
+				aspect-ratio: 1/1;
+				border-radius: 50%;
+				display: grid;
+				place-items: center;
+				overflow: hidden;
+				outline: 8px solid #156a62;
+				background: transparent; /* ring without skew */
+			}
+			.circle img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			/* Spacing & type (unchanged from your version, tweak as you like) */
+			.caption {
+				margin-top: 2rem;
+				color: #156a62;
+			}
+			.caption .title {
+				font-weight: 700;
+				font-size: 1.8rem;
+				color: #156a62;
+			}
+			.caption .subtitle {
+				font-weight: 400;
+				font-size: 1.1rem;
+				padding: 0.5em 1em 0 1em;
+				color: #156a62;
+			}
+			/* Socials row */
+			.socials {
+				margin-top: 1.4em;
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+			}
+			.socials a {
+				font-size: 1.8rem;
+				transition: color 0.3s ease;
+			}
+			.socials a:hover .icon {
+				background-color: #37938a;
+			}
+			.icon {
+				background-repeat: no-repeat;
+				background-size: cover;
+				display: inline-block;
+				height: 1.2em;
+				aspect-ratio: 1/1;
+				background-color: #156a62;
+			}
+			/* .icon-code {
+				-webkit-mask: url('/images/icons/code.svg') no-repeat center / contain;
+				mask: url('/images/icons/code.svg') no-repeat center / contain;
+				vertical-align: -0.2em;
+			} */
+			.icon-laptop-code {
+				-webkit-mask: url('/images/icons/laptop-code.svg') no-repeat center / contain;
+				mask: url('/images/icons/laptop-code.svg') no-repeat center / contain;
+				vertical-align: -0.35em;
+				height: 1.4em;
+			}
+			.icon-envelope {
+				-webkit-mask: url('/images/icons/envelope.svg') no-repeat center / contain;
+				mask: url('/images/icons/envelope.svg') no-repeat center / contain;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="circle">
+				<img
+					src="/images/avatar-300.webp"
+					srcset="/images/avatar-300.webp 1x, /images/avatar-600.webp 2x"
+					alt="Avatar"
+					width="300"
+					height="300"
+					fetchpriority="high"
+					decoding="async"
+				/>
+			</div>
+			<div class="caption">
+				<div class="title">
+					Trent Milton
+					<i class="icon icon-laptop-code"></i>
+				</div>
+				<div class="subtitle">Software Dev.</div>
+			</div>
+			<div class="socials">
+				<a
+					href="mailto:trent@a.trentmilton.com"
+					aria-label="Drop me a message"
+					title="Drop me a message"
+				>
+					<i class="icon icon-envelope"></i>
+				</a>
+			</div>
+		</div>
+	</body>
+</html>
